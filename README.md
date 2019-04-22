@@ -260,7 +260,7 @@ We will build bins of intervals 10 min each. Unix Time Stamp: No of seconds pass
 If we notice carefully some 10 minute intervals has 0 pick ups. 0 is not very relevant when we train the model. So instead of keeping those values as it is, we will smooth them. The process is as follows. We have time binned regions of 10 minute intervals. Let's take three continuos intervals and let's say each of the intervals have 50,100 and 0 pickups respectively. Instead of taking 0 as the third value we will take the take the average of all the values and distribute it in the three regions as 50,50,50. In this way, each 30 minute interval will have the same number of pickups even though the pickups values changes in each of the three 10 minute interval.
 
 
-<img src='Smoothing.png'>
+<img src='images/Smoothing.png'>
 
 
  ## Time series and Fourier Transforms
@@ -273,9 +273,9 @@ Each fourier transformed features are basically multiple sine waves. Each sine w
 
 Whenever we have repeated patterns in our data we can explore them using fourier transformation and use them as features. Because they help us understand the hidden repeated patterns which can be very useful for extracting important features from the data. 
 
-<img src='fourier.png'>
+<img src='images/fourier.png'>
 
-<img src='fft.png'>
+<img src='images/fft.png'>
 
 ### Observation:
 
@@ -412,4 +412,4 @@ Whenever we have repeated patterns in our data we can explore them using fourier
 
 ### Final Results Comparison
 
-<img src='result.png'>
+<img src='images/result.png'>
