@@ -260,6 +260,8 @@ We will build bins of intervals 10 min each. Unix Time Stamp: No of seconds pass
 If we notice carefully some 10 minute intervals has 0 pick ups. 0 is not very relevant when we train the model. So instead of keeping those values as it is, we will smooth them. The process is as follows. We have time binned regions of 10 minute intervals. Let's take three continuos intervals and let's say each of the intervals have 50,100 and 0 pickups respectively. Instead of taking 0 as the third value we will take the take the average of all the values and distribute it in the three regions as 50,50,50. In this way, each 30 minute interval will have the same number of pickups even though the pickups values changes in each of the three 10 minute interval.
 
 
+<img src='Smoothing.png'>
+
 
  ## Time series and Fourier Transforms
 
@@ -271,8 +273,9 @@ Each fourier transformed features are basically multiple sine waves. Each sine w
 
 Whenever we have repeated patterns in our data we can explore them using fourier transformation and use them as features. Because they help us understand the hidden repeated patterns which can be very useful for extracting important features from the data. 
 
-# Insert fourier images
-# Inser FFT Images
+<img src='fourier.png'>
+
+<img src='fft.png'>
 
 ### Observation:
 
@@ -407,13 +410,6 @@ Whenever we have repeated patterns in our data we can explore them using fourier
 
 <b>We have achieved the best MAPE of 0.074 with XGBoost regression.</b> This is closely followed by the Random Forest model with a test MAPE of 0.91. The linear model behaved very poorly. I would have tried an SVM RBF but my PC is not powerful enough to handle this data for an RBF kernel. For holt winters double and tripple exponential smoothing I have used the code from the reference notebook provided to me via email. 
 
+### Final Results Comparison
 
-
-
-
-
-
-
-
-
-
+<img src='result.png'>
