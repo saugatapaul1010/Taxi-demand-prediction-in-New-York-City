@@ -249,6 +249,8 @@ Lastly while breaking NYC into clusters we need to keep in mind that we need to 
 ### Cluster Regions
 <img src='images/cluster_regions.JPG'>
 
+
+
           
 
 
