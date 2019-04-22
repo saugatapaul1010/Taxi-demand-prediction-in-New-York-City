@@ -244,10 +244,10 @@ It is inferred from the source https://www.flickr.com/places/info/2459115 that N
 Lastly while breaking NYC into clusters we need to keep in mind that we need to find a trade off such that the centroids are typically 2 miles away at large and 0.5 miles away at minimum. 
 
 ### Cluster Centers
-<img src='images/cluster_centers.png'>
+<img src='images/cluster_centers.JPG'>
           
 ### Cluster Regions
-<img src='images/cluster_regions.png'>
+<img src='images/cluster_regions.JPG'>
 
           
 
