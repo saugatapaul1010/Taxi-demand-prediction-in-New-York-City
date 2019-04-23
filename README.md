@@ -360,7 +360,7 @@ We will take the time series data, transform them using fourier transformation, 
 
 #### Note about DC component.
 
-If we take a closer look at the waves, we can see that the Y axis of teh waves are not centered at zero. The wave is centered around some ther value and oscillating around it. Due to this, during fast fourier transform we will aslo get a peak 0 (corresponding to the fact that the wave is not centered at 0). This peak is called a DC component. DC componenet tells us that the wave is not centered at zero. 
+If we take a closer look at the waves, we can see that the Y axis of the waves are not centered at zero. The wave is centered around some ther value and oscillating around it. Due to this, during fast fourier transform we will aslo get a peak 0 (corresponding to the fact that the wave is not centered at 0). This peak is called a DC component. DC componenet tells us that the wave is not centered at zero. 
 
 Peak at zero ===> DC Component.
 Peak at 1/144 ===> Daily variation.
