@@ -42,7 +42,7 @@ IN terms of interpretability, it is not so much important. Because if we think a
 We will primarily stick to median absolute percentage error as our key performance indicator. For this problem we will consider relative error and not absolute error. Let's look at a simple example, suppose the predicted value of the number of pickups in a scenario is 55, whereas the actual value is 50. In an other case, suppose the predicted number of pickups is 5 and the actual number of pickup is 10. In both the cases, the absolute error is the same - that is 5. However, the relative error for case 1 is much lesser than in case 2. In case it is 10%. In case 2, it is 50%. Massive difference!
 
 # Data Collection
-We Have collected all yellow taxi trips data from jan-2015 to dec-2016(Will be using only 2016 data in this assignment and test it on 2018 data.)
+We Have collected all yellow taxi trips data from jan-2015 to dec-2016(Will be using only 2016 data in this case study and test it on 2018 data.)
 <table>
 <tr>
 <th> file name </th>
@@ -385,6 +385,8 @@ The code is used from: https://grisha.org/blog/2016/02/16/triple-exponential-smo
 <b>Season Length: </b> "Season length is the number of data points after which a new season begins."
 
 <b>Seasonal component: </b> "The seasonal component is an additional deviation from level + trend that repeats itself at the same offset into the season. There is a seasonal component for every point in a season, i.e. if your season length is 12, there are 12 seasonal components. We will use s to denote the seasonal component."
+
+<img src='images/tripple.png'>
 
 "The idea behind triple exponential smoothing is to apply exponential smoothing to the seasonal components in addition to level and trend. The smoothing is applied across seasons, e.g. the seasonal component of the 3rd point into the season would be exponentially smoothed with the the one from the 3rd point of last season, 3rd point two seasons ago, etc. In math notation we now have four equations." 
 
